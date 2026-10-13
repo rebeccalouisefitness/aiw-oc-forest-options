@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" data-v="cur">
+<head>
+<meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DESIGN PREVIEW · Opportunity Call · forest green options</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://chtnnijlhanjzxwbajvf.supabase.co">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@400;500;600&family=Caveat:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ===========================================================================
+   THE AI WELLNESS COLLECTIVE — Opportunity Call                   DESIGN ONLY
+   Built to her reference layout (AI Wellness Collective mockup), 8 Oct 2026.
+
+   HER BRIEF: "Use these words exactly. Not so much of the green more our
+   colors but everything else the same but the coaches photos. But if it's a
+   guys page we can't have sisterhood so change that words. Anything else
+   that makes it sound just for women too."
+
+   SO: the reference's layout and wording, section for section - nav, hero
+   with the portrait right, the five-icon strip, the app section with the
+   tick list, the community section, Three Simple Steps, the closing CTA.
+
+   COLOUR: green pulled right back. The reference runs dark-green buttons
+   throughout; here the anchor is her own warm off-black #2A2521 and the
+   accent is AI Wellness tan #C8956C, on her cream. Sage survives only on the
+   tick marks. (Her last note on the old CTA was that the tan itself read
+   wrong - #A9764D was a muddy mid-brown. A dark espresso CTA gives the
+   contrast the page needs without being either green or tan.)
+
+   ⚠ THREE DEPARTURES FROM "EXACTLY", EVERY ONE FLAGGED TO HER:
+   1. "Create income and flexibility on your terms" is an INCOME CLAIM. She
+      has banned income language twice today and four coaches' bios are
+      already a live compliance item (AIW-261). Reworded.
+   2. The testimonial in the reference is INVENTED - an unattributed quote
+      from "AI Wellness Collective member". Standing rule: nothing invented,
+      no testimonials. Section removed rather than faked.
+   3. The brand is the AI Wellness COLLECTIVE. She confirmed the name on
+      8 Oct - "It's the AI Wellness Collective" - and every brand
+      reference on this page and the thank-you page was renamed then.
+
+   ⚠ GENDER: there is NO gender field in the database. MALE_SLUGS below is my
+   determination from names, photographs and each coach's own story, and it
+   is one line to correct. Checked rather than assumed - "Kayden Douglas"
+   reads male and is a woman.
+   =========================================================================== */
+
+:root{
+  --cream:#FBF8F3;        /* her ground */
+  --sand:#F3EDE4;         /* band */
+  --card:#FFFFFF;
+  --ink:#2A2521;          /* warm off-black - the anchor and the CTA */
+  --ink-soft:#4A423B;
+  --body:#5B534B;
+  --muted:#8C8378;
+  --line:#E6DDD0;
+  --tan:#C8956C;          /* AI Wellness accent */
+  --tan-d:#A9764D;
+  --sage:#8B9F7A;         /* green, reduced to tick marks only */
+  --disp:'Cormorant Garamond',Palatino,Georgia,serif;
+  --bodyf:Palatino,'Palatino Linotype','Book Antiqua',Georgia,serif;
+  --ui:'Inter',system-ui,-apple-system,sans-serif;
+  --script:'Caveat',cursive;
+  --pill:999px;
+  --lift:0 18px 48px rgba(42,37,33,.14);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--body);font-family:var(--bodyf);
+  font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+p{margin:0 0 1em}
+img{max-width:100%;display:block}
+a{color:var(--ink)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+.narrow{max-width:760px;margin:0 auto}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);
+  clip-path:inset(50%);white-space:nowrap}
+:focus-visible{outline:3px solid var(--tan);outline-offset:3px}
+.eyebrow{font-family:var(--ui);font-weight:500;font-size:10.5px;letter-spacing:.26em;
+  text-transform:uppercase;color:var(--tan-d);margin:0 0 16px}
+h1,h2,h3{font-family:var(--disp);font-weight:400;color:var(--ink);margin:0;letter-spacing:-.005em}
+h1{font-size:clamp(40px,5.2vw,62px);line-height:1.08}
+h2{font-size:clamp(31px,3.9vw,46px);line-height:1.12}
+h1 em,h2 em{font-style:italic}
+.script{font-family:var(--script);font-size:25px;color:var(--ink-soft);line-height:1.25}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:60;background:rgba(251,248,243,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .in{max-width:1160px;margin:0 auto;padding:14px 28px;display:flex;
+  align-items:center;gap:26px}
+.nav .in .btn{margin-left:auto}
+.brand{font-family:var(--disp);font-size:21px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink);line-height:1}
+.brand small{display:block;font-family:var(--ui);font-size:8.5px;letter-spacing:.26em;
+  color:var(--tan-d);margin-top:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--ink);color:#fff;font-family:var(--ui);font-weight:500;font-size:11.5px;
+  letter-spacing:.16em;text-transform:uppercase;padding:14px 26px;border-radius:var(--pill);
+  border:0;cursor:pointer;text-decoration:none;transition:background .15s,transform .15s}
+.btn:hover{background:#161210;transform:translateY(-1px)}
+.btn .arr{width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.18);
+  display:flex;align-items:center;justify-content:center;font-size:11px}
+.btn.sm{padding:11px 22px;font-size:10.5px}
+
+/* ---------- hero ---------- */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch;
+  background:var(--cream)}
+.hero .left{padding:62px 0 62px 0}
+.hero .leftin{max-width:560px;margin-left:auto;padding:0 52px 0 28px}
+.hero .lede{font-size:17px;max-width:34em;color:var(--body)}
+.heroCta{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:28px}
+/* "the picture of me kind of gets squished, it makes it into a square, make it long" -
+   a taller column plus a portrait-ratio source means the crop keeps her full height. */
+.hero .right{position:relative;min-height:760px;background:var(--sand);overflow:hidden}
+.hero .right img{width:100%;height:100%;object-fit:cover;object-position:center 12%;
+  position:absolute;inset:0}
+.hero .mono{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:var(--disp);font-size:120px;color:var(--tan);background:var(--sand)}
+.heroWords{position:absolute;top:34px;right:30px;text-align:right;z-index:2}
+.heroWords .script{font-size:27px;color:var(--ink);line-height:1.35;
+  text-shadow:0 1px 10px rgba(251,248,243,.8)}
+.heroName{position:absolute;right:30px;bottom:28px;text-align:right;z-index:2}
+.heroName .n{font-family:var(--ui);font-weight:600;font-size:11.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--ink)}
+.heroName .r{font-family:var(--bodyf);font-size:13px;color:var(--ink-soft);margin-top:3px}
+.heroName .sh{background:rgba(251,248,243,.82);padding:9px 14px;border-radius:4px}
+
+/* ---------- form ---------- */
+.form{margin-top:26px;max-width:430px}
+.f{margin-bottom:11px}
+input[type=text],input[type=email],input[type=tel]{width:100%;font-family:var(--bodyf);
+  font-size:16px;color:var(--ink);background:transparent;border:1px solid var(--ink);
+  border-radius:var(--pill);padding:15px 22px;text-align:center}
+input::placeholder{color:#8C8378;opacity:1}
+input:focus{border-width:2px;background:#fff}
+.phoneRow{display:grid;grid-template-columns:118px 1fr;gap:9px}
+.ccwrap{position:relative}
+#ccBtn{width:100%;height:100%;display:flex;align-items:center;gap:5px;justify-content:center;
+  background:transparent;border:1px solid var(--ink);border-radius:var(--pill);padding:15px 8px;
+  font-family:var(--bodyf);font-size:15px;color:var(--ink);cursor:pointer}
+#ccList{display:none;position:absolute;z-index:30;top:calc(100% + 5px);left:0;width:290px;
+  max-height:252px;overflow:auto;background:#fff;border:1px solid var(--line);
+  border-radius:14px;box-shadow:var(--lift);padding:5px}
+#ccList.open{display:block}
+#ccList button{display:flex;width:100%;gap:9px;align-items:center;background:none;border:0;
+  padding:9px 11px;border-radius:8px;cursor:pointer;font-family:var(--bodyf);font-size:14.5px;
+  color:var(--ink);text-align:left}
+#ccList button:hover{background:var(--sand)}
+#ccList .nm{flex:1}
+#ccList .d{color:var(--muted)}
+.consent{display:flex;gap:11px;align-items:flex-start;margin:12px 0 16px}
+.consent input{margin-top:4px;width:17px;height:17px;accent-color:var(--ink);flex:none}
+.consent label{font-family:var(--bodyf);font-size:13.5px;color:var(--muted);margin:0}
+.formErr{display:none;margin:0 0 12px;padding:12px 16px;border-radius:14px;
+  background:#F6E4DC;color:#8A3B1E;font-family:var(--ui);font-size:13.5px;text-align:center}
+.formErr.show{display:block}
+.btn.full{width:100%;font-size:12px;padding:17px}
+
+/* ---------- five icon strip ---------- */
+.strip{background:var(--sand);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.strip .in{max-width:1160px;margin:0 auto;padding:40px 28px;display:grid;
+  grid-template-columns:repeat(5,1fr)}
+.pil{text-align:center;padding:0 18px;border-left:1px solid rgba(42,37,33,.1)}
+.pil:first-child{border-left:0}
+.pil svg{margin:0 auto 14px;display:block}
+.pil .t{font-family:var(--ui);font-weight:600;font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink);margin-bottom:7px}
+.pil .d{font-size:14px;line-height:1.5;color:var(--body)}
+
+/* ---------- app ---------- */
+section{padding:74px 0}
+.appGrid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.phones{position:relative;display:flex;gap:18px;align-items:flex-start}
+.phone{flex:1;border-radius:26px;overflow:hidden;background:#fff;box-shadow:var(--lift);
+  border:1px solid var(--line)}
+.phone img{width:100%;display:block}
+.phoneWrap{flex:1;margin:0}
+.phoneWrap.b{margin-top:38px}
+.phoneWrap figcaption{font-family:var(--ui);font-weight:600;font-size:10.5px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink);text-align:center;
+  margin-top:14px;line-height:1.6}
+.phoneWrap figcaption span{display:block;font-weight:400;letter-spacing:.1em;
+  color:var(--tan-d);margin-top:3px}
+.ticks{list-style:none;margin:22px 0 0;padding:0}
+.ticks li{display:flex;gap:13px;align-items:flex-start;margin-bottom:11px;font-size:16px}
+.tk{flex:none;width:21px;height:21px;border-radius:50%;background:var(--sage);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:11px;margin-top:3px}
+
+/* ---------- community ---------- */
+.commGrid{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.commGrid .pic{position:relative;min-height:440px;overflow:hidden;background:var(--sand)}
+.commGrid .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.commGrid .txt{background:var(--sand);display:flex;align-items:center;padding:60px 56px}
+
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px}
+.step{text-align:center;padding:0 30px;border-left:1px solid var(--line)}
+.step:first-child{border-left:0}
+.num{width:52px;height:52px;border-radius:50%;background:var(--sand);color:var(--ink);
+  font-family:var(--disp);font-size:24px;display:flex;align-items:center;justify-content:center;
+  margin:0 auto 18px;border:1px solid var(--line)}
+.step h3{font-family:var(--ui);font-weight:600;font-size:15px;letter-spacing:.01em;
+  color:var(--ink);margin:0 0 8px}
+.step p{font-size:14.5px;margin:0;line-height:1.55}
+
+/* ---------- closing ---------- */
+.closing{position:relative;overflow:hidden;background:var(--ink);text-align:center;
+  padding:92px 0}
+.closing .eyebrow{color:var(--tan)}
+.closing h2{color:#FBF8F3}
+.closing .strapline{font-family:var(--ui);font-size:10.5px;letter-spacing:.24em;
+  text-transform:uppercase;color:rgba(251,248,243,.62);margin-top:34px}
+.closing .btn{background:#FBF8F3;color:var(--ink);margin-top:28px}
+.closing .btn:hover{background:#fff}
+.closing .btn .arr{background:rgba(42,37,33,.12)}
+
+footer{padding:40px 0 56px;text-align:center;background:var(--cream)}
+.disc{font-size:12px;color:var(--muted);max-width:640px;margin:0 auto 12px;line-height:1.6;
+  font-family:var(--ui)}
+.fl{font-size:12.5px;color:var(--muted);font-family:var(--ui)}
+.fl a{color:var(--muted)}
+
+
+
+@media(max-width:1000px){
+  .hero{grid-template-columns:1fr}
+  .hero .leftin{max-width:none;margin:0;padding:0 28px}
+  .hero .right{min-height:560px;order:2}
+  .strip .in{grid-template-columns:repeat(2,1fr);gap:26px 0}
+  .pil{border-left:0;padding:14px 10px}
+  .appGrid,.commGrid{grid-template-columns:1fr;gap:38px}
+  .commGrid .txt{padding:44px 28px}
+  .steps{grid-template-columns:1fr;gap:34px}
+  .step{border-left:0}
+  .nav .links{display:none}
+}
+@media(max-width:620px){
+  body{font-size:16.5px}
+  section{padding:52px 0}
+  .strip .in{grid-template-columns:1fr}
+  .heroWords{display:none}
+  .form{max-width:none}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<style id="forest-options">
+/* AIW-307 DESIGN ONLY - forest green #263426 accent options. Colour only; nothing else differs from live. */
+:root{--forest:#263426}
+/* A - primary CTA buttons in forest */
+html[data-v=a] .btn{background:var(--forest)}
+html[data-v=a] .btn:hover{background:var(--ink)}
+html[data-v=a] .consent input{accent-color:var(--forest)}
+html[data-v=a] .closing .btn{background:#FBF8F3;color:var(--ink)}
+html[data-v=a] .closing .btn:hover{background:#fff}
+/* B - section labels, italic headline words and tick circles in forest */
+html[data-v=b] .eyebrow,html[data-v=b] .brand small,html[data-v=b] .phoneWrap figcaption span{color:var(--forest)}
+html[data-v=b] h1 em,html[data-v=b] h2 em{color:var(--forest)}
+html[data-v=b] .tk{background:var(--forest)}
+html[data-v=b] .closing .eyebrow{color:var(--tan)}
+/* C - one forest band: the closing "Ready to join" section */
+html[data-v=c] .closing{background:var(--forest)}
+html[data-v=c] .closing .btn{color:var(--forest)}
+html[data-v=c] .closing .btn .arr{background:rgba(38,52,38,.12)}
+
+/* preview toggle (not part of the page) */
+#pv{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:999;
+  background:#2A2521;color:#FBF8F3;border-radius:999px;padding:5px;display:flex;gap:3px;
+  box-shadow:0 10px 30px rgba(42,37,33,.35);font-family:'Inter',system-ui,sans-serif}
+#pv button{border:0;background:transparent;color:#FBF8F3;font:600 12px/1 'Inter',system-ui,sans-serif;
+  letter-spacing:.06em;padding:10px 14px;border-radius:999px;cursor:pointer;min-width:44px;min-height:36px}
+#pv button[aria-pressed=true]{background:#FBF8F3;color:#2A2521}
+#pvNote{position:fixed;left:50%;bottom:68px;transform:translateX(-50%);z-index:999;width:max-content;max-width:calc(100vw - 24px);
+  background:rgba(251,248,243,.97);border:1px solid #E6DDD0;color:#2A2521;border-radius:12px;padding:8px 12px;
+  font:500 12px/1.4 'Inter',system-ui,sans-serif;text-align:center;box-shadow:0 6px 18px rgba(42,37,33,.12)}
+footer{padding-bottom:140px}
+</style>
+</head>
+<body>
+
+
+<!-- ===================== NAV ===================== -->
+<div class="nav">
+  <div class="in">
+    <div class="brand">AI Wellness<small>COLLECTIVE</small></div>
+    <a class="btn sm" href="#register">Join Now</a>
+  </div>
+</div>
+
+
+
+<!-- ===================== HERO ===================== -->
+<div class="hero" id="register">
+  <div class="left"><div class="leftin">
+    <p class="eyebrow">Wellness &middot; Opportunity &middot; Community</p>
+    <h1>A Healthier You.<br>A Brighter Future.<br><em>Together.</em></h1>
+    <p class="lede" id="heroLede" style="margin-top:22px">
+      The AI Wellness Collective is a global community of people choosing better health,
+      more freedom and a life they love — with the support, tools and opportunity to build
+      something of their own.
+    </p>
+
+    <form class="form" id="regForm" novalidate>
+      <input type="hidden" id="sponsorSlug">
+      <p class="formErr" id="formErr" role="alert"></p>
+      <div class="f"><label class="vh" for="firstName">First name</label>
+        <input id="firstName" type="text" autocomplete="given-name" placeholder="First name"></div>
+      <div class="f"><label class="vh" for="email">Email address</label>
+        <input id="email" type="email" autocomplete="email" placeholder="Email address"></div>
+      <div class="f"><label class="vh" for="phone">Phone number</label>
+        <div class="phoneRow">
+          <div class="ccwrap" data-dial="" data-iso="">
+            <button type="button" id="ccBtn" aria-haspopup="listbox" aria-expanded="false">
+              <span id="ccFlag">🌐</span><span id="ccDial">Code</span><span aria-hidden="true">▾</span>
+            </button>
+            <div id="ccList" role="listbox" aria-label="Country dial code"></div>
+          </div>
+          <input id="phone" type="tel" autocomplete="tel" placeholder="Phone number">
+        </div>
+      </div>
+      <div class="consent">
+        <input type="checkbox" id="consentBox">
+        <label for="consentBox">I consent to receiving the video and follow-up.</label>
+      </div>
+      <button type="submit" class="btn full" id="submitBtn">Watch the video <span class="arr">&#9654;</span></button>
+    </form>
+    <p class="script" style="margin-top:18px">See what<br>it's all about</p>
+  </div></div>
+
+  <div class="right">
+    <div id="heroPhoto" class="mono">—</div>
+    <div class="heroWords"><p class="script">Stronger<br>Healthier<br>Happier<br>Freer<br>&#9825;</p></div>
+    <div class="heroName"><div class="sh">
+      <div class="n" id="heroCoachName">Your coach</div>
+      <div class="r" id="heroCoachRole">AI Wellness Collective</div>
+    </div></div>
+  </div>
+</div>
+
+<!-- ===================== FIVE PILLARS ===================== -->
+<div class="strip"><div class="in">
+  <div class="pil">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2A2521" stroke-width="1.2"><path d="M12 21c0-6 3-10 8-11-1 6-3 9-8 11zM12 21c0-5-2.5-8.5-7-9.5.8 5 2.5 7.8 7 9.5zM12 21v-6"/></svg>
+    <div class="t">Better Health</div><div class="d">Feel your best<br>inside and out</div></div>
+  <div class="pil">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2A2521" stroke-width="1.2"><path d="M3 20h18M6 20v-6M11 20V9M16 20v-9M21 20V5"/></svg>
+    <div class="t">Real Opportunity</div><div class="d" id="pillarOpp">A real plan and flexibility<br>on your terms</div></div>
+  <div class="pil">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2A2521" stroke-width="1.2"><circle cx="9" cy="9" r="3"/><circle cx="17" cy="10" r="2.3"/><path d="M3 19c0-3.3 2.7-5 6-5s6 1.7 6 5M15.5 19c0-2.2 1.5-3.4 3.5-3.4s3 1.2 3 3.4"/></svg>
+    <div class="t">A Supportive Community</div><div class="d">Surround yourself<br>with like-minded people</div></div>
+  <div class="pil">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2A2521" stroke-width="1.2"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.6h2"/></svg>
+    <div class="t">Smart Tools</div><div class="d">AI-powered systems<br>to make it simple</div></div>
+  <div class="pil">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2A2521" stroke-width="1.2"><path d="M12 20.5s-7.5-4.6-7.5-9.6A4.2 4.2 0 0 1 12 8.4a4.2 4.2 0 0 1 7.5 2.5c0 5-7.5 9.6-7.5 9.6z"/></svg>
+    <div class="t">A Brighter Future</div><div class="d">Build a life<br>you love</div></div>
+</div></div>
+
+<!-- ===================== THE APP ===================== -->
+<section>
+  <div class="wrap"><div class="appGrid">
+    <div class="phones">
+      <figure class="phoneWrap">
+        <div class="phone"><img src="https://aiw-opportunity-call.netlify.app/img/app-member.jpg" alt="" loading="lazy"></div>
+        <figcaption>The AI Wellness app<span>for members</span></figcaption>
+      </figure>
+      <figure class="phoneWrap b">
+        <div class="phone"><img src="https://aiw-opportunity-call.netlify.app/img/app-business.jpg" alt="" loading="lazy"></div>
+        <figcaption>The AI Wellness Business app<span>for the team</span></figcaption>
+      </figure>
+    </div>
+    <div>
+      <p class="eyebrow">Your all-in-one system</p>
+      <h2>Simple Tools.<br>Big Results.</h2>
+      <p style="margin-top:20px">Our AI-powered app gives you personalized nutrition,
+        a follow-up system that remembers for you, and your whole business in your pocket —
+        all in one place. Whether you're here for your health, your business or both, we make
+        it simple to take action and see progress.</p>
+      <!-- Features swapped at her request: "we're not talking about on-demand workouts ...
+           say some of the features that we have, like follow-up system, your business in
+           your pocket, enroll people in easy". -->
+      <ul class="ticks">
+        <li><span class="tk">&#10003;</span>Personalized nutrition and wellness plans</li>
+        <li><span class="tk">&#10003;</span>A follow-up system that remembers for you</li>
+        <li><span class="tk">&#10003;</span>Your whole business in your pocket</li>
+        <li><span class="tk">&#10003;</span>Enroll people in a few taps</li>
+        <li><span class="tk">&#10003;</span>Your content made for you</li>
+        <li><span class="tk">&#10003;</span>Six weeks of training, step by step</li>
+      </ul>
+      <p class="script" style="margin-top:20px">wellness meets<br>opportunity &#9825;</p>
+    </div>
+  </div></div>
+</section>
+
+<!-- ===================== COMMUNITY ===================== -->
+<div class="commGrid">
+  <!-- A man and a woman together - the previous shot was replaced at her request and
+       this one is deliberately not women-only. -->
+  <div class="pic"><img src="https://aiw-opportunity-call.netlify.app/img/community.jpg" alt="" loading="lazy"></div>
+  <div class="txt"><div>
+    <p class="eyebrow">A community that feels like home</p>
+    <h2>More Than a Business.<br><em>A Community.</em></h2>
+    <p style="margin-top:20px;max-width:30em" id="commBody">The AI Wellness Collective is a global
+      community of people who support, encourage and celebrate each other. You're never doing
+      this alone — we're in it together.</p>
+    <a class="btn" href="#register" style="margin-top:12px">Be part of it <span class="arr">&#8594;</span></a>
+  </div></div>
+</div>
+
+<!-- ===================== THREE STEPS ===================== -->
+<section>
+  <div class="wrap">
+    <div style="text-align:center">
+      <p class="eyebrow">How to get started</p>
+      <h2>Three Simple Steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div>
+        <h3>Choose Your Starter Pack</h3>
+        <p>Select a product pack that's right for you and join our team.</p></div>
+      <div class="step"><div class="num">2</div>
+        <h3>Get Instant Access</h3>
+        <p>Unlock the AI Wellness app, training, and our private community.</p></div>
+      <div class="step"><div class="num">3</div>
+        <h3>Start Your Journey</h3>
+        <p>Follow your personalized plan and begin building the life you want.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CLOSING ===================== -->
+<div class="closing">
+  <div class="wrap">
+    <p class="eyebrow">This is your time</p>
+    <h2>Ready to Join the AI Wellness Collective?</h2>
+    <a class="btn" href="#register">Yes, I'm in! <span class="arr">&#8594;</span></a>
+    <p class="strapline">Better Health &nbsp;&middot;&nbsp; More Freedom &nbsp;&middot;&nbsp; A Brighter Future</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <!-- ⚠ THE HERBALIFE INCOME DISCLAIMER WAS REMOVED AT HER REQUEST, 8 Oct.
+         It read: "Results vary significantly. Most Herbalife independent distributors do
+         not earn significant income from this opportunity."
+         This page still promotes the business opportunity - "Real Opportunity", "join our
+         team", "Business training", "build something of their own" - and that disclaimer
+         is normally REQUIRED on opportunity materials. Removing it is the one change in
+         this pass I would not ship live without a compliance check. One line to restore. -->
+    <p class="fl"><a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a><br>
+      &copy; Rebecca-Louise Inc &middot; The AI Wellness Collective</p>
+  </div>
+</footer>
+
+<script>
+/* PREVIEW SAFETY: this mock must never create a lead (AIW-184 - a test submit pushes to Rebecca's phone). */
+window.addEventListener('submit',function(e){e.preventDefault();e.stopImmediatePropagation();
+  var el=document.getElementById('formErr');if(el){el.textContent='Preview only — this form does not send.';el.classList.add('show');}},true);
+</script>
+<script>
+var SUPA="https://chtnnijlhanjzxwbajvf.supabase.co";
+var ANON="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNodG5uaWpsaGFuanp4d2JhanZmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIzMTgwNjMsImV4cCI6MjA5Nzg5NDA2M30.W3AAU3bLVCOYhsbIasoiqPkGk-HKxZD9tTlFO28FFPc";
+var DEFAULT_SLUG='rebecca';
+
+/* Gender branching retired at her request - "I just want to have it generic for
+   everybody. Let's not mess it up." One page for everyone, so the MALE_SLUGS list
+   and its guesswork are gone; the Winter Knight ambiguity no longer matters. */
+
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function initials(n){var p=String(n||'').trim().split(/\s+/).filter(Boolean);
+  return (((p[0]||'')[0]||'')+(p.length>1?(p[p.length-1][0]||''):'')).toUpperCase();}
+
+function photoURL(url,w,h){
+  if(!url) return '';
+  var m=String(url).match(/\/object\/public\/(.+)$/);
+  if(!m) return url;
+  return SUPA+'/storage/v1/render/image/public/'+m[1]+'?width='+w+'&height='+h+'&resize=cover&quality=74';
+}
+function paintPhoto(id,coach,w,h,eager){
+  var el=document.getElementById(id); if(!el) return;
+  if(coach&&coach.photo_url){
+    var img=new Image(); img.alt=''; img.loading=eager?'eager':'lazy'; img.decoding='async';
+    img.src=photoURL(coach.photo_url,w,h);
+    img.onerror=function(){img.onerror=null;img.src=coach.photo_url;};
+    el.replaceWith(img); img.id=id;
+  }else{ el.className='mono'; el.textContent=initials(coach&&coach.name)||'AI'; }
+}
+
+function applyCoach(coach){
+  var name=(coach&&coach.name)||'Your coach';
+  var isFounder = coach && coach.slug===DEFAULT_SLUG;
+
+  document.getElementById('heroCoachName').textContent=name;
+  document.getElementById('heroCoachRole').innerHTML = isFounder
+    ? 'Founder, BURN<br>&amp; AI Wellness Collective'
+    : 'AI Wellness Collective';
+  document.title='The AI Wellness Collective — '+name.split(' ')[0]+' has invited you';
+
+  paintPhoto('heroPhoto',coach,1000,1500,true);
+}
+
+function slugFromUrl(){
+  var q=new URLSearchParams(location.search).get('c');
+  if(q) return q.trim().toLowerCase();
+  var parts=location.pathname.replace(/^\/+|\/+$/g,'').split('/').filter(Boolean);
+  if(parts[0]==='opportunity-call') parts.shift();
+  var seg=parts[0]||'';
+  if(!seg||/\./.test(seg)) return '';
+  return decodeURIComponent(seg).trim().toLowerCase();
+}
+function sget(p){return fetch(SUPA+'/rest/v1/'+p,
+  {headers:{apikey:ANON,Authorization:'Bearer '+ANON}}).then(function(r){return r.json();});}
+
+/* WHO THE LEAD BELONGS TO - the same contract as the live page.
+   /rebecca -> "rebecca" (path)   /?c=dale -> "dale" (query)   / -> DEFAULT_SLUG
+   public.leads.distributor_slug is NOT NULL and public.submit_lead refuses any
+   slug that is not a real distributor, so a lead either belongs to someone or
+   is not written at all. A bare URL therefore has to name a fallback. */
+var slugField=document.getElementById('sponsorSlug');
+var URL_SLUG='rebecca'; /* preview: fixed to Rebecca's link */
+slugField.value = URL_SLUG || DEFAULT_SLUG;
+
+/* The coach name is cosmetic - it addresses the confirmation email - so a
+   failed lookup must never block a registration. */
+var COACH_NAME='';
+sget('cohort_sponsors?select=slug,name,photo_url&slug=eq.'+encodeURIComponent(slugField.value))
+  .then(function(rows){
+    var c=(rows||[])[0];
+    if(c){ COACH_NAME=c.name; applyCoach(c); }
+    else { applyCoach({slug:DEFAULT_SLUG,name:'Rebecca Louise',photo_url:null}); }
+  })
+  .catch(function(){applyCoach({slug:DEFAULT_SLUG,name:'Rebecca Louise',photo_url:null});});
+
+/* ---- evergreen date: one source, weekday DERIVED, instants in Z ---- */
+var CALLS=["2026-10-13T14:00:00Z"]; var TZ='America/New_York';
+function nextCall(){var now=Date.now();
+  var f=CALLS.map(function(x){return new Date(x).getTime();})
+             .filter(function(t){return !isNaN(t)&&t>now;}).sort(function(a,b){return a-b;});
+  return f.length?f[0]:null;}
+function fmt(ts,o){return new Intl.DateTimeFormat('en-GB',Object.assign({timeZone:TZ},o)).format(new Date(ts));}
+function timeET(ts){return fmt(ts,{hour:'numeric',minute:'2-digit',hour12:true})
+  .replace(/\s?(am|pm)/i,function(m,p){return p.toLowerCase();});}
+/* The call has happened and this page is evergreen, so there is no date to
+   print and no countdown to run. nextCall(), fmt() and timeET() are left in
+   place - they are still used by nothing here, but removing the CALLS source
+   of truth is a separate decision for her. */
+
+(function(){
+  var C=[["GB","44","United Kingdom"],["US","1","United States"],["AU","61","Australia"],
+         ["CA","1","Canada"],["IE","353","Ireland"],["NZ","64","New Zealand"],
+         ["ZA","27","South Africa"],["DE","49","Germany"],["FR","33","France"],
+         ["ES","34","Spain"],["IT","39","Italy"],["NL","31","Netherlands"],
+         ["AE","971","United Arab Emirates"],["IN","91","India"],["SG","65","Singapore"]];
+  function flag(iso){return iso.toUpperCase().replace(/./g,function(c){
+    return String.fromCodePoint(127397+c.charCodeAt(0));});}
+  var btn=document.getElementById('ccBtn'),list=document.getElementById('ccList'),wrap=btn.parentNode;
+  list.innerHTML=C.map(function(r){return '<button type="button" role="option" data-iso="'+r[0]+
+    '" data-dial="+'+r[1]+'"><span>'+flag(r[0])+'</span><span class="nm">'+r[2]+
+    '</span><span class="d">+'+r[1]+'</span></button>';}).join('');
+  btn.addEventListener('click',function(e){e.stopPropagation();
+    var o=list.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false');});
+  list.addEventListener('click',function(e){
+    var b=e.target.closest('button[data-dial]');if(!b)return;
+    document.getElementById('ccFlag').textContent=flag(b.dataset.iso);
+    document.getElementById('ccDial').textContent=b.dataset.dial;
+    wrap.dataset.dial=b.dataset.dial;wrap.dataset.iso=b.dataset.iso;
+    list.classList.remove('open');btn.setAttribute('aria-expanded','false');});
+  document.addEventListener('click',function(e){
+    if(!wrap.contains(e.target)){list.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+})();
+
+/* ⚠ ABSOLUTE, NOT RELATIVE, AND THIS IS LOAD-BEARING - see the header note. */
+var FN='about:blank'; /* preview: no endpoint */
+var form=document.getElementById('regForm'),
+    errBox=document.getElementById('formErr'),
+    btn=document.getElementById('submitBtn'),
+    btnLabel=btn.innerHTML;
+function showErr(m,focusEl){
+  errBox.textContent=m;errBox.classList.add('show');
+  errBox.scrollIntoView({block:'center'});
+  if(focusEl)focusEl.focus();
+}
+form.addEventListener('submit',function(e){
+  e.preventDefault();
+  errBox.classList.remove('show');
+  var first=document.getElementById('firstName').value.trim();
+  var email=document.getElementById('email').value.trim();
+  var phone=document.getElementById('phone').value.trim();
+  var wrap =document.querySelector('.ccwrap');
+  var dial =wrap.dataset.dial||'', country=wrap.dataset.iso||'';
+  var slug =slugField.value.trim();
+  var cb   =document.getElementById('consentBox');
+  if(!first)                                    return showErr('Please enter your first name.',document.getElementById('firstName'));
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return showErr('Please enter a valid email address.',document.getElementById('email'));
+  /* Rebecca, 2 Oct: "they all require a telephone number and the country code".
+     Without a dial code the stored number cannot be rung or WhatsApped from
+     another country, and this cohort is international. */
+  if(!dial)
+    return showErr('Please choose your country code.',document.getElementById('phone'));
+  if(!phone||phone.replace(/[^0-9]/g,'').length<6)
+    return showErr('Please enter your phone number so we can send you a reminder.',document.getElementById('phone'));
+  if(!slug)                                     return showErr('Something is wrong with this link. Please use the link your coach sent you.');
+  if(!cb.checked)                               return showErr('Please tick the box to agree to the Terms and Privacy Policy.',cb);
+
+  /* last_name is no longer collected - she removed the field. The function
+     validates slug, email and first_name only, so an empty string is fine. */
+  var coach={name:COACH_NAME||'your coach'};
+  btn.disabled=true;btn.textContent='One moment\u2026';
+  fetch(FN,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+    first_name:first,last_name:'',email:email,phone:phone,
+    dial_code:dial,country_code:country,slug:slug,coach_name:coach.name,
+    intent:'opportunity_call'
+  })})
+  .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+  .then(function(res){
+    /* ⚠ public.submit_lead RETURNS FALSE rather than raising when it refuses,
+       so the function checks that boolean and answers 422. A 200 is the only
+       thing that means the row actually landed. */
+    if(res.ok&&res.j&&res.j.ok){
+      /* Relative ON PURPOSE: resolves to /opportunity-call/thanks on the router
+         and /thanks on the netlify host. Both are served. */
+      window.location.href='thanks?coach='+encodeURIComponent(slug)+'&name='+encodeURIComponent(first);
+    }else{
+      btn.disabled=false;btn.innerHTML=btnLabel;
+      showErr((res.j&&res.j.error)||'Something went wrong \u2014 please try again.');
+    }
+  })
+  .catch(function(){
+    btn.disabled=false;btn.innerHTML=btnLabel;
+    showErr('Network error \u2014 please try again.');
+  });
+});
+</script>
+
+<div id="pvNote" role="status">Current — live page as it is today</div>
+<div id="pv" role="group" aria-label="Colour option">
+  <button data-v="cur" aria-pressed="true">Current</button>
+  <button data-v="a" aria-pressed="false">A</button>
+  <button data-v="b" aria-pressed="false">B</button>
+  <button data-v="c" aria-pressed="false">C</button>
+</div>
+<script>
+(function(){
+ var notes={cur:'Current — live page as it is today',
+  a:'A — buttons in forest green',
+  b:'B — section labels, italic headline words and ticks in forest green',
+  c:'C — closing “Ready to Join” band in forest green'};
+ function set(v){document.documentElement.setAttribute('data-v',v);
+  document.querySelectorAll('#pv button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.v===v)});
+  document.getElementById('pvNote').textContent=notes[v];
+  try{history.replaceState(null,'','#'+v)}catch(e){}}
+ document.querySelectorAll('#pv button').forEach(function(b){b.onclick=function(){set(b.dataset.v)}});
+ var h=(location.hash||'').slice(1); if(notes[h]) set(h);
+})();
+</script>
+</body>
+</html>
